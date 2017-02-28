@@ -43,6 +43,21 @@
 		22DB4D9A1B234D07008B8466 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D931B234D07008B8466 /* TOCropToolbar.m */; };
 		22DB4D9B1B234D07008B8466 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D951B234D07008B8466 /* TOCropView.m */; };
 		22DB4D9E1B234D4F008B8466 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D9D1B234D4F008B8466 /* TOActivityCroppedImageProvider.m */; };
+		22EE5E291E65568800A92D8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE5E281E65568800A92D8D /* AppDelegate.swift */; };
+		22EE5E2B1E65568800A92D8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE5E2A1E65568800A92D8D /* ViewController.swift */; };
+		22EE5E2E1E65568800A92D8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EE5E2C1E65568800A92D8D /* Main.storyboard */; };
+		22EE5E301E65568800A92D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EE5E2F1E65568800A92D8D /* Assets.xcassets */; };
+		22EE5E331E65568800A92D8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EE5E311E65568800A92D8D /* LaunchScreen.storyboard */; };
+		22EE5E391E65578C00A92D8D /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE5E381E65578C00A92D8D /* CropViewController.swift */; };
+		22EE5E3A1E65583A00A92D8D /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8A1B234D07008B8466 /* TOCropViewControllerTransitioning.m */; };
+		22EE5E3B1E65583A00A92D8D /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D9D1B234D4F008B8466 /* TOActivityCroppedImageProvider.m */; };
+		22EE5E3C1E65583A00A92D8D /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* TOCroppedImageAttributes.m */; };
+		22EE5E3D1E65583A00A92D8D /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8C1B234D07008B8466 /* UIImage+CropRotate.m */; };
+		22EE5E3E1E65583A00A92D8D /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D911B234D07008B8466 /* TOCropScrollView.m */; };
+		22EE5E3F1E65583A00A92D8D /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D931B234D07008B8466 /* TOCropToolbar.m */; };
+		22EE5E401E65583A00A92D8D /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D951B234D07008B8466 /* TOCropView.m */; };
+		22EE5E411E65583A00A92D8D /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D831B234CFA008B8466 /* TOCropViewController.m */; };
+		22EE5E431E6559BF00A92D8D /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8F1B234D07008B8466 /* TOCropOverlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +119,15 @@
 		22DB4D951B234D07008B8466 /* TOCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropView.m; sourceTree = "<group>"; };
 		22DB4D9C1B234D4F008B8466 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOActivityCroppedImageProvider.h; sourceTree = "<group>"; };
 		22DB4D9D1B234D4F008B8466 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOActivityCroppedImageProvider.m; sourceTree = "<group>"; };
+		22EE5E261E65568800A92D8D /* CropViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CropViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EE5E281E65568800A92D8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22EE5E2A1E65568800A92D8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22EE5E2D1E65568800A92D8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22EE5E2F1E65568800A92D8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22EE5E321E65568800A92D8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22EE5E341E65568800A92D8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EE5E381E65578C00A92D8D /* CropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CropViewController.swift; path = CropViewController/CropViewController.swift; sourceTree = SOURCE_ROOT; };
+		22EE5E421E65591000A92D8D /* CropViewControllerExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CropViewControllerExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		3AADDE231CA5C43400AE0129 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
 		6AE313501C47DAA200894C5B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6AE313511C47DAA200894C5B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
@@ -127,6 +151,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		223424671ABBC0CD00BBC2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EE5E231E65568800A92D8D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -170,8 +201,10 @@
 		223424611ABBC0CC00BBC2B1 = {
 			isa = PBXGroup;
 			children = (
+				22EE5E271E65568800A92D8D /* CropViewControllerExample */,
 				2234246C1ABBC0CD00BBC2B1 /* TOCropViewControllerExample */,
 				220611981B2E6777001A467B /* TOCropViewControllerTests */,
+				22EE5E211E65554C00A92D8D /* CropViewController */,
 				144B8CCA1D22CAFF0085D774 /* TOCropViewController */,
 				2234246B1ABBC0CD00BBC2B1 /* Products */,
 			);
@@ -183,6 +216,7 @@
 				2234246A1ABBC0CD00BBC2B1 /* TOCropViewControllerExample.app */,
 				220611971B2E6777001A467B /* TOCropViewControllerTests.xctest */,
 				144B8CC91D22CAFF0085D774 /* TOCropViewController.framework */,
+				22EE5E261E65568800A92D8D /* CropViewControllerExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +273,29 @@
 				22DB4D951B234D07008B8466 /* TOCropView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		22EE5E211E65554C00A92D8D /* CropViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22EE5E381E65578C00A92D8D /* CropViewController.swift */,
+			);
+			name = CropViewController;
+			path = TOCropViewControllerExample;
+			sourceTree = "<group>";
+		};
+		22EE5E271E65568800A92D8D /* CropViewControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				22EE5E281E65568800A92D8D /* AppDelegate.swift */,
+				22EE5E2A1E65568800A92D8D /* ViewController.swift */,
+				22EE5E2C1E65568800A92D8D /* Main.storyboard */,
+				22EE5E2F1E65568800A92D8D /* Assets.xcassets */,
+				22EE5E311E65568800A92D8D /* LaunchScreen.storyboard */,
+				22EE5E341E65568800A92D8D /* Info.plist */,
+				22EE5E421E65591000A92D8D /* CropViewControllerExample-Bridging-Header.h */,
+			);
+			path = CropViewControllerExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,12 +374,30 @@
 			productReference = 2234246A1ABBC0CD00BBC2B1 /* TOCropViewControllerExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		22EE5E251E65568800A92D8D /* CropViewControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EE5E351E65568800A92D8D /* Build configuration list for PBXNativeTarget "CropViewControllerExample" */;
+			buildPhases = (
+				22EE5E221E65568800A92D8D /* Sources */,
+				22EE5E231E65568800A92D8D /* Frameworks */,
+				22EE5E241E65568800A92D8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CropViewControllerExample;
+			productName = CropViewControllerExample;
+			productReference = 22EE5E261E65568800A92D8D /* CropViewControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		223424621ABBC0CC00BBC2B1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Tim Oliver";
 				TargetAttributes = {
@@ -337,6 +412,11 @@
 					223424691ABBC0CD00BBC2B1 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 6LF3GMKZAB;
+					};
+					22EE5E251E65568800A92D8D = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 6LF3GMKZAB;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -372,6 +452,7 @@
 				223424691ABBC0CD00BBC2B1 /* TOCropViewControllerExample */,
 				220611961B2E6777001A467B /* TOCropViewControllerTests */,
 				144B8CC81D22CAFF0085D774 /* TOCropViewController */,
+				22EE5E251E65568800A92D8D /* CropViewControllerExample */,
 			);
 		};
 /* End PBXProject section */
@@ -399,6 +480,16 @@
 				2234247E1ABBC0CD00BBC2B1 /* LaunchScreen.xib in Resources */,
 				2234247B1ABBC0CD00BBC2B1 /* Images.xcassets in Resources */,
 				22C3C5471AC8CA0D00E86280 /* TOCropViewControllerLocalizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EE5E241E65568800A92D8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EE5E331E65568800A92D8D /* LaunchScreen.storyboard in Resources */,
+				22EE5E301E65568800A92D8D /* Assets.xcassets in Resources */,
+				22EE5E2E1E65568800A92D8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +536,25 @@
 				22DB4D961B234D07008B8466 /* TOCropViewControllerTransitioning.m in Sources */,
 				22DB4D991B234D07008B8466 /* TOCropScrollView.m in Sources */,
 				22DB4D861B234CFA008B8466 /* TOCropViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EE5E221E65568800A92D8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EE5E2B1E65568800A92D8D /* ViewController.swift in Sources */,
+				22EE5E291E65568800A92D8D /* AppDelegate.swift in Sources */,
+				22EE5E391E65578C00A92D8D /* CropViewController.swift in Sources */,
+				22EE5E3A1E65583A00A92D8D /* TOCropViewControllerTransitioning.m in Sources */,
+				22EE5E3B1E65583A00A92D8D /* TOActivityCroppedImageProvider.m in Sources */,
+				22EE5E3C1E65583A00A92D8D /* TOCroppedImageAttributes.m in Sources */,
+				22EE5E3D1E65583A00A92D8D /* UIImage+CropRotate.m in Sources */,
+				22EE5E431E6559BF00A92D8D /* TOCropOverlayView.m in Sources */,
+				22EE5E3E1E65583A00A92D8D /* TOCropScrollView.m in Sources */,
+				22EE5E3F1E65583A00A92D8D /* TOCropToolbar.m in Sources */,
+				22EE5E401E65583A00A92D8D /* TOCropView.m in Sources */,
+				22EE5E411E65583A00A92D8D /* TOCropViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +609,22 @@
 				3AADDE231CA5C43400AE0129 /* vi */,
 			);
 			name = TOCropViewControllerLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		22EE5E2C1E65568800A92D8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22EE5E2D1E65568800A92D8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22EE5E311E65568800A92D8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22EE5E321E65568800A92D8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -718,6 +844,45 @@
 			};
 			name = Release;
 		};
+		22EE5E361E65568800A92D8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = CropViewControllerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.timoliver.CropViewControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/CropViewControllerExample/CropViewControllerExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		22EE5E371E65568800A92D8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6LF3GMKZAB;
+				INFOPLIST_FILE = CropViewControllerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.timoliver.CropViewControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/CropViewControllerExample/CropViewControllerExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -756,6 +921,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		22EE5E351E65568800A92D8D /* Build configuration list for PBXNativeTarget "CropViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EE5E361E65568800A92D8D /* Debug */,
+				22EE5E371E65568800A92D8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
