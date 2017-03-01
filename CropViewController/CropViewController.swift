@@ -23,6 +23,18 @@
 import Foundation
 import UIKit
 
+public enum CropViewControllerAspectRatioPreset {
+    case original = TOCropViewControllerAspectRatioPresetOriginal
+    case square = TOCropViewControllerAspectRatioPresetSquare
+    case 3x2 = TOCropViewControllerAspectRatioPreset3x2
+    case 5x2 = TOCropViewControllerAspectRatioPreset5x3
+    case 4x3 = TOCropViewControllerAspectRatioPreset4x3
+    case 5x4 = TOCropViewControllerAspectRatioPreset5x4
+    case 7x5 = TOCropViewControllerAspectRatioPreset7x5
+    case 16x9 = TOCropViewControllerAspectRatioPreset16x9
+    case custom = TOCropViewControllerAspectRatioPresetCustom
+}
+
 public protocol CropViewControllerDelegate: class {
     func cropViewController(_ cropViewController: CropViewController, didCropToRect: CGRect, angle: Int)
     func cropViewController(_ cropviewController: CropViewController, didCropToImage: UIImage, rect: CGRect, angle: Int)
@@ -31,5 +43,16 @@ public protocol CropViewControllerDelegate: class {
 }
 
 public final class CropViewController: TOCropViewController, TOCropViewControllerDelegate {
-    open weak var delegate: CropViewControllerDelegate?
+
+    fileprivate var delegateProxy: CropViewControllerDelegate?
+
+    open override weak var delegate: CropViewControllerDelegate? {
+        set {
+            super.delegate = self
+            self.delegateProxy = newValue
+        }
+        get { return delegateProxy }
+    }
+
+    
 }
