@@ -32,6 +32,9 @@
 @property (nonatomic, strong, readwrite) UIButton *cancelTextButton;
 @property (nonatomic, strong, readwrite) UIButton *cancelIconButton;
 
+@property (nonatomic, copy) NSString *toolBarTitleStr;
+@property (nonatomic, strong, readwrite) UILabel *toolBarTitleLabel;
+
 @property (nonatomic, strong) UIButton *resetButton;
 @property (nonatomic, strong) UIButton *clampButton;
 
@@ -139,6 +142,11 @@
     [_resetButton setImage:[TOCropToolbar resetImage] forState:UIControlStateNormal];
     [_resetButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_resetButton];
+    
+    _toolBarTitleLabel = [[UILabel alloc] init];
+    _toolBarTitleLabel.font = [UIFont systemFontOfSize:15];
+    _toolBarTitleLabel.textColor = [UIColor whiteColor];
+    [self addSubview:_toolBarTitleLabel];
 }
 
 - (void)layoutSubviews
@@ -216,7 +224,13 @@
             [buttonsInOrderHorizontally addObject:self.rotateCounterclockwiseButton];
         }
         
-        [buttonsInOrderHorizontally addObject:self.resetButton];
+        if (self.toolBarTitleStr.length > 0) {
+            [buttonsInOrderHorizontally addObject:self.toolBarTitleLabel];
+        }
+        
+        if (!self.resetButtonHidden) {
+            [buttonsInOrderHorizontally addObject:self.resetButton];
+        }
         
         if (!self.clampButtonHidden) {
             [buttonsInOrderHorizontally addObject:self.clampButton];
@@ -254,7 +268,13 @@
             [buttonsInOrderVertically addObject:self.rotateCounterclockwiseButton];
         }
         
-        [buttonsInOrderVertically addObject:self.resetButton];
+        if (self.toolBarTitleStr.length > 0) {
+            [buttonsInOrderVertically addObject:self.toolBarTitleLabel];
+        }
+        
+        if (!self.resetButtonHidden) {
+            [buttonsInOrderVertically addObject:self.resetButton];
+        }
         
         if (!self.clampButtonHidden) {
             [buttonsInOrderVertically addObject:self.clampButton];
@@ -326,6 +346,23 @@
         return;
     
     _clampButtonHidden = clampButtonHidden;
+    [self setNeedsLayout];
+}
+
+- (void)setResetButtonHidden:(BOOL)resetButtonHidden {
+    if (_resetButtonHidden == resetButtonHidden) {
+        return;
+    }
+    _resetButtonHidden = resetButtonHidden;
+    [self setNeedsLayout];
+}
+
+- (void)setToolBarTitle:(NSString *)title {
+    if ([_toolBarTitleStr isEqualToString:title]) {
+        return;
+    }
+    _toolBarTitleStr = title;
+    _toolBarTitleLabel.text = title;
     [self setNeedsLayout];
 }
 

@@ -40,7 +40,16 @@
 {
     TOCropViewController *cropController = [[TOCropViewController alloc] initWithCroppingStyle:self.croppingStyle image:image];
     cropController.delegate = self;
+    cropController.customAspectRatio = CGSizeMake(1.0, 1.0);
     
+    cropController.aspectRatioLockEnabled = YES;
+    cropController.aspectRatioPickerButtonHidden = YES;
+    cropController.resetAspectRatioEnabled = NO;
+    cropController.rotateButtonsHidden = YES;
+    cropController.rotateClockwiseButtonHidden = YES;
+    cropController.resetButtonHidden = YES;
+    
+    [cropController setToolBarTitle:@"标题"];
     // -- Uncomment these if you want to test out restoring to a previous crop setting --
     //cropController.angle = 90; // The initial angle in which the image will be rotated
     //cropController.imageCropFrame = CGRectMake(0,0,2848,4288); //The

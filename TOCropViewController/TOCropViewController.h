@@ -203,6 +203,13 @@ typedef NS_ENUM(NSInteger, TOCropViewControllerToolbarPosition) {
  */
 @property (nonatomic, assign) BOOL aspectRatioPickerButtonHidden;
 
+
+/**
+ 回复按钮是否隐藏
+ Default is NO.
+ */
+@property (nonatomic, assign) BOOL resetButtonHidden;
+
 /** 
  If `showActivitySheetOnDone` is true, then these activity items will 
  be supplied to that UIActivityViewController in addition to the 
@@ -260,7 +267,7 @@ typedef NS_ENUM(NSInteger, TOCropViewControllerToolbarPosition) {
  */
 @property (nullable, nonatomic, strong) void (^onDidCropToCircleImage)(UIImage* _Nonnull image, CGRect cropRect, NSInteger angle);
 
-
+- (void)setToolBarTitle:(NSString *_Nullable)title;
 
 ///------------------------------------------------
 /// @name Object Creation

@@ -61,6 +61,8 @@
 @property (nonatomic, assign) BOOL clampButtonHidden;
 @property (nonatomic, assign) BOOL rotateCounterclockwiseButtonHidden;
 @property (nonatomic, assign) BOOL rotateClockwiseButtonHidden;
+//隐藏resetButton
+@property (nonatomic, assign) BOOL resetButtonHidden;
 
 /* Enable the reset button */
 @property (nonatomic, assign) BOOL resetButtonEnabled;
@@ -68,5 +70,12 @@
 /* Done button frame for popover controllers */
 @property (nonatomic, readonly) CGRect doneButtonFrame;
 
+
+/**
+ 设置工具栏标题
+
+ @param title 标题
+ */
+- (void)setToolBarTitle:(NSString *_Nullable)title;
 
 @end

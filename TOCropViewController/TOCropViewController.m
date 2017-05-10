@@ -85,7 +85,7 @@
         _image = image;
         _croppingStyle = style;
         
-        _aspectRatioPreset = TOCropViewControllerAspectRatioPresetOriginal;
+        _aspectRatioPreset = TOCropViewControllerAspectRatioPresetSquare;
         _toolbarPosition = TOCropViewControllerToolbarPositionBottom;
         _rotateClockwiseButtonHidden = YES;
     }
@@ -885,6 +885,10 @@
     return _toolbar;
 }
 
+- (void)setToolBarTitle:(NSString *_Nullable)title {
+    [self.toolbar setToolBarTitle:title];
+}
+
 - (void)setAspectRatioLockEnabled:(BOOL)aspectRatioLockEnabled
 {
     self.toolbar.clampButtonGlowing = aspectRatioLockEnabled;
@@ -931,6 +935,10 @@
 - (void)setAspectRatioPickerButtonHidden:(BOOL)aspectRatioPickerButtonHidden
 {
     self.toolbar.clampButtonHidden = aspectRatioPickerButtonHidden;
+}
+
+- (void)setResetButtonHidden:(BOOL)resetButtonHidden {
+    self.toolbar.resetButtonHidden = resetButtonHidden;
 }
 
 - (BOOL)aspectRatioPickerButtonHidden
