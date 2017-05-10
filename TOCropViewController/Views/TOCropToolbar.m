@@ -143,7 +143,8 @@
     [_resetButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_resetButton];
     
-    _toolBarTitleLabel = [[UILabel alloc] init];
+    _toolBarTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 150, 17)];
+    _toolBarTitleLabel.textAlignment = NSTextAlignmentCenter;
     _toolBarTitleLabel.font = [UIFont systemFontOfSize:15];
     _toolBarTitleLabel.textColor = [UIColor whiteColor];
     [self addSubview:_toolBarTitleLabel];
@@ -307,7 +308,11 @@
         } else {
             origin.y += CGRectGetMinY(containerRect);
         }
-        button.frame = (CGRect){origin, size};
+        if ([button isKindOfClass:[UILabel class]]) {
+            button.frame = (CGRect){CGPointMake((self.frame.size.width - 150) / 2.0,origin.y), CGSizeMake(150, size.height)};
+        } else {
+            button.frame = (CGRect){origin, size};
+        }
     }
 }
 

@@ -49,7 +49,7 @@
     cropController.rotateClockwiseButtonHidden = YES;
     cropController.resetButtonHidden = YES;
     
-    [cropController setToolBarTitle:@"标题"];
+    [cropController setToolBarTitle:@"上传照片"];
     // -- Uncomment these if you want to test out restoring to a previous crop setting --
     //cropController.angle = 90; // The initial angle in which the image will be rotated
     //cropController.imageCropFrame = CGRectMake(0,0,2848,4288); //The
