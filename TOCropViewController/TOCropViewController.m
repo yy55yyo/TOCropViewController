@@ -781,7 +781,7 @@
             if (!completed)
                 return;
             
-            bool isCallbackOrDelegateHandled = NO
+            bool isCallbackOrDelegateHandled = NO;
             
             if (self.onDidFinishCancelled != nil) {
                 self.onDidFinishCancelled(NO)
